@@ -2,7 +2,7 @@
     include("database.php");
     $id = $_GET['editid'];
 
-    $sql = "SELECT * FROM crud where id='$id'";
+    $sql = "SELECT * FROM todolist where id='$id'";
     $result = mysqli_query($conn, $sql);
     $row = mysqli_fetch_assoc($result);
     $task = $row['task'];
@@ -11,7 +11,7 @@
     {
         $task = $_POST['task'];
 
-        $sql = "UPDATE crud set id='$id', task='$task' WHERE id='$id'";
+        $sql = "UPDATE todolist set id='$id', task='$task' WHERE id='$id'";
     $result = mysqli_query($conn, $sql);
 
     if($result){

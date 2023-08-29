@@ -4,7 +4,7 @@
     if(isset($_POST['submit']))
     {
         $task = $_POST['task'];
-        $sql = "INSERT INTO crud(id,task,status) VALUES(NULL,'$task','0')";
+        $sql = "INSERT INTO todolist(id,task,status) VALUES(NULL,'$task','0')";
     $result = mysqli_query($conn, $sql);
 
     if($result){

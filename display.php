@@ -37,7 +37,7 @@
             
             <?php 
             
-               $sql = "SELECT id,task from crud WHERE status='0'";
+               $sql = "SELECT id,task from todolist WHERE status='0'";
                $result = mysqli_query($conn, $sql);
                if($result)
                {
@@ -79,7 +79,7 @@
             
             <?php 
 
-               $sql = "SELECT id,task FROM crud WHERE status='1'";
+               $sql = "SELECT id,task FROM todolist WHERE status='1'";
                $result = mysqli_query($conn, $sql);
                if($result)
                {

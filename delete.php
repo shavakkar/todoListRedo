@@ -5,7 +5,7 @@
     {
         $id = $_GET['deleteid'];
 
-        $sql = "DELETE FROM crud where id='$id'";
+        $sql = "DELETE FROM todolist where id='$id'";
         $result = mysqli_query($conn, $sql);
 
         if($result){
