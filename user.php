@@ -5,15 +5,15 @@
     {
         $task = $_POST['task'];
         $sql = "INSERT INTO todolist(id,task,status) VALUES(NULL,'$task','0')";
-    $result = mysqli_query($conn, $sql);
-
-    if($result){
-        // echo "hi";
-        header('location:display.php');
-    }
-    else{
-        die(mysqli_error($conn));
-    }
+        $result = mysqli_query($conn, $sql);
+        
+        if($result){
+            // echo "hi";
+            header('location:display.php');
+        }
+        else{
+            die(mysqli_error($conn));
+        }
     }
 
     
